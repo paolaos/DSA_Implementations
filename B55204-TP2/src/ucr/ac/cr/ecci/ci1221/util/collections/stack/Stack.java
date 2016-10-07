@@ -2,6 +2,8 @@ package ucr.ac.cr.ecci.ci1221.util.collections.stack;
 
 import ucr.ac.cr.ecci.ci1221.util.collections.Collection;
 
+import java.util.Iterator;
+
 /**
  * Interface for all the implementations of the Stack model. The <code>Stack</code> interface
  * represents a last-in-first-out (LIFO) stack of objects. Do not modify.
@@ -14,9 +16,9 @@ public interface Stack<E> extends Collection{
      * Pushes an item onto the top of this stack.
      *
      * @param   element the item to be pushed onto this stack.
-     * @return  the <code>item</code> argument.
+     *
      */
-     E push(E element);
+     void push(E element);
 
     /**
      * Removes the object at the top of this stack and returns that
@@ -35,4 +37,6 @@ public interface Stack<E> extends Collection{
      * @return  the object at the top of this stack or null if this stack is empty.
      */
     E peek();
+
+
 }

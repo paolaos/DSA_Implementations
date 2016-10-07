@@ -14,6 +14,14 @@ import java.util.Iterator;
  * @see Collection
  */
 public interface List<E> extends Collection{
+    /**
+     * Returns the first element in this list.
+     * @throws IndexOutOfBoundsException if there are no elements in the list.
+     * @return the first position that is in the list.
+     *
+     */
+
+    E first();
 
     /**
      * Returns the element at the specified position in this list.
@@ -114,6 +122,7 @@ public interface List<E> extends Collection{
      *         (<tt>index &lt; 0 || index &gt;= size()</tt>)
      */
     E remove(int index);
+
 
     /**
      * Returns an iterator over elements of type {@code T}.

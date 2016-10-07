@@ -2,6 +2,8 @@ package ucr.ac.cr.ecci.ci1221.util.collections.queue;
 
 import ucr.ac.cr.ecci.ci1221.util.collections.Collection;
 
+import java.util.Iterator;
+
 /**
  * Interface for all the implementations of the Queue model. Do not modify.
  *
@@ -31,4 +33,5 @@ public interface Queue<E> extends Collection{
      * @return the head of this queue, or {@code null} if this queue is empty
      */
     E peek();
+
 }
